@@ -7,7 +7,7 @@
 * Collaborative filtering
   * User-User recommender with KNN
   * Item-Item recommender with KNN
-  * SVD decomposition (coming soon)
+  * Matrix factorisation using ALS
   
 ## Powered by
 * pandas
@@ -36,4 +36,4 @@ From the `movie_rec` directory simply type the following command
 python recommend.py <userId> <method>
 ```
 
-Where you pass the user's Id and the method you'd like to use. Options for the method are `user_user` and `item_item`
+Where you pass the user's Id and the method you'd like to use. Options for the method are `user_user`, `item_item`, `als`

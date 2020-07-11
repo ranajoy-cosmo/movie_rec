@@ -19,10 +19,6 @@ def load_and_clean_movie_metadata():
     file_path = os.path.join(os.path.dirname(__file__), "../data/movies_metadata.csv")
     movie_met = spark.read.csv(file_path, header=True)
 
-    # We see plenty of columns that we do not require in out analysis. We'll drop them
-    # Also notice that the dtype is string for all columns
-    # This might imply that they contain a mix of different dytpes
-
     # Dropping the columns not needed
     movie_met = movie_met.drop(*['homepage', 'imdb_id', 'original_title', 'poster_path', 'video', 'belongs_to_collection', 'revenue', 'tagline', 'overview', 'spoken_languages', 'production_countries'])
     
@@ -37,7 +33,6 @@ def load_and_clean_movie_metadata():
 
     # Keeping only the release year
     # Cleaning NaN/Null rows
-
     movie_met = movie_met.withColumn('year', year(movie_met['release_date'])).drop('release_date')
     movie_met = movie_met.filter(movie_met['year'].isNotNull())
 
@@ -51,7 +46,9 @@ def load_and_clean_movie_metadata():
     movie_met = movie_met.dropDuplicates(['id'])
     movie_met = movie_met.fillna("unknown", subset=["original_language"])
 
+    # Transfering the spark dataframe to pandas for some transformations that are better in pandas
     df_mmd = movie_met.toPandas()
+    del movie_met
 
     # Extract genres
     df_mmd.genres = df_mmd.genres.map(lambda col_str: [col_dict['name'] for col_dict in eval(col_str)])

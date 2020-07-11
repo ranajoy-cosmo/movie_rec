@@ -19,14 +19,7 @@
 ## Getting the dataset
 
 The dataset is taken from the TMDB dataset on kaggle
-To setup the dataset run the following script
-
-```
-mkdir data
-cd data
-kaggle datasets download -d rounakbanik/the-movies-dataset
-unzip the-movies-dataset.zip
-```
+To setup the dataset run `bash get_data.sh` from the `movie_rec` directory
 
 ## Running the scripts
 

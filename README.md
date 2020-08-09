@@ -1,6 +1,6 @@
 <h1 align="center">movie_rec</h3>
 <p align="center">
-  A movie recommendation system demonstrating Collaborative Filtering techniques
+  A movie recommendation engine using Collaborative Filtering techniques
 </p>
 
 ## Table of Contents
@@ -10,7 +10,7 @@
 * [What is Collaborative Filtering](#what-is-col_filt)
 
 ## About the Project
-The goal of this project is to demonstrate some popular collborative filtering methods for making movie recommendations
+The goal of this project is to demonstrate a recommender systems, in particular the class of methods called Collaborative Filtering. I 
 
 ### Features
 * Collaborative filtering
@@ -27,6 +27,9 @@ The goal of this project is to demonstrate some popular collborative filtering m
 * scikit-learn
 
 ## What is Collaborative Filtering
+A recommender system is particularly useful for organisations that need to suggest items to its customers. It may do this in several intelligent ways that based on features inherent to the item and the customer, based on the user's past activity, or based on similarities deduced from the interaction between group of users and items.
+
+Collaborative filtering methods are those that rely solely on the past interaction between users and items 
 
 ## Getting the dataset
 

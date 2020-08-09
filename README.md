@@ -1,20 +1,32 @@
 <h1 align="center">movie_rec</h3>
 <p align="center">
-  A movie recommendation system demonstrating some popular recommendation systems
+  A movie recommendation system demonstrating Collaborative Filtering techniques
 </p>
 
-## Features
+## Table of Contents
+* [About the Project](#about-the-project)
+  * [Features](#features)
+  * [Built with](#built-with)
+* [What is Collaborative Filtering](#what-is-col_filt)
+
+## About the Project
+The goal of this project is to demonstrate some popular collborative filtering methods for making movie recommendations
+
+### Features
 * Collaborative filtering
   * User-User recommender with KNN
   * Item-Item recommender with KNN
   * Matrix factorisation using ALS
+* Demographic filtering
   
-## Powered by
+### Built with
 * pandas
 * numpy
 * scipy
 * pyspark
 * scikit-learn
+
+## What is Collaborative Filtering
 
 ## Getting the dataset
 

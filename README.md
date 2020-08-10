@@ -8,7 +8,8 @@
   * [Features](#features)
   * [Dataset](#dataset)
   * [Built with](#built-with)
-* [What is Collaborative Filtering](#what-is-col_filt)
+* [What is Recommendation System?](#what-is-rec-sys)
+  * [Collaborative Filtering](#col-filt)
   * [k-Nearest Neighbour classification](#knn-class)
   * [Matrix factorisation](#mat-fac)
 * [API](#api)
@@ -27,7 +28,7 @@ The goal of this project is to demonstrate a recommender systems, in particular 
 * Demographic filtering
 
 ### Dataset
-The dataset is taken from the TMDB dataset on kaggle at [The Movies Dataset!](https://www.kaggle.com/rounakbanik/the-movies-dataset/version/7).
+The dataset is taken from the TMDB dataset on kaggle at [The Movies Dataset](https://www.kaggle.com/rounakbanik/the-movies-dataset/version/7).
   
 ### Built with
 * pandas
@@ -36,10 +37,17 @@ The dataset is taken from the TMDB dataset on kaggle at [The Movies Dataset!](ht
 * pyspark
 * scikit-learn
 
-## What is Collaborative Filtering?
-A recommender system is particularly useful for organisations that need to suggest items to its customers. It may do this in several intelligent ways that based on features inherent to the item and the customer, based on the user's past activity, or based on similarities deduced from the interaction between group of users and items.
+## What is a Recommendation System?
+
+A recommendation system is what its name suggests. It is a tool that intelligently recommends an object, be it movies or clothes, to an entity, say, an user. A recommendation system is particularly useful for organisations that need to suggest items to its customers. It may do this in several ways: based on features inherent to the item and the user, based on the user's past activity, or based on similarities deduced from the interaction between group of users and items.
+
+### Collaborative Filtering
 
 Collaborative filtering methods are those that rely solely on the past interaction between users and items. In the case of movies, this interaction might be ratings given to movies by users, or a "like" or "dislike". The model takes these user-item interactions and determines the closeness between the given population of users and items, and recommends items that appear the closest to a particular user.
+
+#### k-nearest Neighbours
+
+ABC
 
 ## API
 

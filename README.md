@@ -6,6 +6,7 @@
 ## Table of Contents
 * [About the Project](#about-the-project)
   * [Features](#features)
+  * [Dataset](#dataset)
   * [Built with](#built-with)
 * [What is Collaborative Filtering](#what-is-col_filt)
   * [k-Nearest Neighbour classification](#knn-class)
@@ -24,6 +25,9 @@ The goal of this project is to demonstrate a recommender systems, in particular 
   * Item-Item recommender with KNN
   * Matrix factorisation using ALS
 * Demographic filtering
+
+### Dataset
+The dataset is taken from the TMDB dataset on kaggle at [The Movies Dataset!](https://www.kaggle.com/rounakbanik/the-movies-dataset/version/7).
   
 ### Built with
 * pandas
@@ -43,7 +47,7 @@ To facilitate the use of the recommendation engine, an API is available for exec
 
 ### Setting up
 
-The dataset is taken from the TMDB dataset on kaggle
+
 To setup the dataset run `bash get_data.sh` from the `movie_rec` directory
 
 ## Running the scripts

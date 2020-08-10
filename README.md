@@ -10,7 +10,7 @@
   * [Built with](#built-with)
 * [What is Recommendation System?](#what-is-rec-sys)
   * [Collaborative Filtering](#col-filt)
-    * [k-Nearest Neighbour classification](#knn-class)
+    * [k-nearest Neighbours](#knn-class)
     * [Matrix factorisation](#mat-fac)
 * [API](#api)
   * [Setting up](#setup)
@@ -47,7 +47,7 @@ Collaborative filtering methods are those that rely solely on the past interacti
 
 #### k-nearest Neighbours
 
-ABC
+#### Matrix Factorisation
 
 ## API
 
